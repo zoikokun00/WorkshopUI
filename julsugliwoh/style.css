@@ -1,0 +1,241 @@
+/* Resets */
+
+hr {
+    margin-left: 0;
+    max-width: 40px;
+}
+
+.tombol {
+    color: #fff;
+    background-color: #194569;
+    border-color: #9a9fa3;
+}
+
+
+/* Jumbotron (hero) */
+
+.jumbotron {
+    position: relative;
+    padding: 100px 0;
+    &:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(242, 242, 242, .1);
+    }
+    .container {
+        padding: 75px 0;
+    }
+    h1,
+    .lead {
+        color: #194569;
+    }
+}
+
+
+/* Bustom button */
+
+.btn-primary {
+    background: #194569;
+    border: 0;
+    &:hover {
+        background: darken(#194569, 7%);
+    }
+}
+
+
+/* Features */
+
+.sec-features {
+    .row {
+        &:nth-of-type(n+2) {
+            margin-top: 160px;
+        }
+        &:last-of-type {
+            margin-bottom: 160px;
+        }
+    }
+    .feature-icon {
+        max-width: 150px;
+    }
+}
+
+
+/* Testimonials */
+
+.sec-testimonials {
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+
+
+/* Carousel */
+
+.carousel-indicators {
+    bottom: -30px;
+    li {
+        background: rgba(33, 33, 33, .1);
+        &:focus,
+        &:hover {
+            background: rgba(33, 33, 33, .5);
+        }
+    }
+    .active {
+        background: rgba(33, 33, 33, .75);
+    }
+}
+
+.window {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 400px;
+    background-color: #fff;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    overflow: auto;
+}
+
+.float-window {
+    position: relative;
+    width: 400px;
+    height: 232px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    overflow: auto;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    outline: #000 solid 1px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+.circle-white {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-left: 30px;
+    background-color: #fff;
+}
+
+.circle:nth-child(2) {
+    left: 60px;
+}
+
+.circle:nth-child(3) {
+    left: 80px;
+}
+
+
+/* Add more nth-child rules for additional circles */
+
+.carousel-control-next,
+.carousel-control-prev {
+    & {
+        color: #194569;
+    }
+    &:focus,
+    &:hover {
+        color: #111;
+    }
+}
+
+
+/* Footer */
+
+.footer {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background: #194569;
+    li {
+        &:nth-of-type(n+2) {
+            margin-left: 8px;
+        }
+    }
+    a {
+        font-size: 18px;
+        color: rgba(255, 255, 255, .5);
+        transition: color .235s ease-in-out;
+        &:focus,
+        &:hover {
+            color: rgba(255, 255, 255, .25);
+        }
+    }
+}
+
+.sec-about {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #194569;
+    color: #fff;
+}
+
+
+/* CSS tambahan untuk mengubah warna footer dan mengatur gambar di tengah-tengah */
+
+.footer {
+    background: #194569;
+    /* Mengubah warna latar belakang footer */
+}
+
+
+/* Style tambahan untuk gambar di tengah-tengah */
+
+#gambarkotak {
+    width: 500px;
+    /* Mengatur lebar gambar */
+    display: block;
+    /* Agar gambar berada di tengah */
+    margin: 0 auto;
+    /* Agar gambar berada di tengah */
+}
+
+
+/* Tambahkan CSS untuk layout grid */
+
+.pricing-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pricing-item {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .pricing-item {
+        width: 45%;
+    }
+}
+
+.btn-custom {
+    background-color: #194569;
+    border-color: #194569;
+}
+
+.btn-custom:hover {
+    background-color: darken(#194569, 7%);
+}
